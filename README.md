@@ -9,7 +9,7 @@ V1.0.1: Add device options(cpu or gpu).
 **Authors**: Zhitao Zheng (<qq44642754@163.com>)
 
 <p>
-   <img width = "1000" src="https://github.com/qq44642754a/Yolov8_ros/blob/master/yolov8_ros/media/yolov8.png"></a>
+   <img width = "1000" src="https://github.com/qq44642754a/Yolov8_ros/blob/master/yolov8_ros/media/image.png"></a>
 </p>
 
 

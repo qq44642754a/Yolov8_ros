@@ -20,7 +20,7 @@ class Yolo_Dect:
         weight_path = rospy.get_param('~weight_path', '')
         image_topic = rospy.get_param(
             '~image_topic', '/camera/color/image_raw')
-        pub_topic = rospy.get_param('~pub_topic', '/yolov5/BoundingBoxes')
+        pub_topic = rospy.get_param('~pub_topic', '/yolov8/BoundingBoxes')
         self.camera_frame = rospy.get_param('~camera_frame', '')
         conf = rospy.get_param('~conf', '0.5')
         self.visualize = rospy.get_param('~visualize', 'True')
@@ -50,7 +50,7 @@ class Yolo_Dect:
             pub_topic,  BoundingBoxes, queue_size=1)
 
         self.image_pub = rospy.Publisher(
-            '/yolov5/detection_image',  Image, queue_size=1)
+            '/yolov8/detection_image',  Image, queue_size=1)
 
         # if no image messages
         while (not self.getImageStatus):
@@ -94,7 +94,7 @@ class Yolo_Dect:
         self.publish_image(self.frame, height, width)
 
         if self.visualize :
-            cv2.imshow('YOLOv5', self.frame)
+            cv2.imshow('YOLOv8', self.frame)
 
     def publish_image(self, imgdata, height, width):
         image_temp = Image()
@@ -110,7 +110,7 @@ class Yolo_Dect:
 
 
 def main():
-    rospy.init_node('yolov5_ros', anonymous=True)
+    rospy.init_node('yolov8_ros', anonymous=True)
     yolo_dect = Yolo_Dect()
     rospy.spin()
 
