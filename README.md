@@ -1,4 +1,4 @@
-# Yolov5_ros
+# Yolov8_ros
 
 For simplified Chinese version: [简体中文版](./README_CN.md) 
 
@@ -27,7 +27,7 @@ pip install ultralytics
 pip install rospkg
 ```
 
-## Installation yolov5_ros
+## Installation yolov8_ros
 
 ```
 cd /your/catkin_ws/src

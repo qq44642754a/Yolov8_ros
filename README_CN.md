@@ -1,8 +1,8 @@
-# Yolov5_ros
+# Yolov8_ros
 
 For English version: [English](./README.md) 
 
-提供了一个基于PyTorch-YOLOv8的[PyTorch-YOLOv5](https://github.com/ultralytics/yolov5)的ROS功能包。该功能包已在Ubuntu18.04和Ubuntu 20.04上进行了测试。
+提供了一个基于PyTorch-YOLOv8的[PyTorch-YOLOv8](https://github.com/ultralytics/ultralytics)的ROS功能包。该功能包已在Ubuntu18.04和Ubuntu 20.04上进行了测试。
 
 Authors: Zhitao Zheng (qq44642754@163.com)
 
