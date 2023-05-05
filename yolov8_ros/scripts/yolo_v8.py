@@ -87,9 +87,7 @@ class Yolo_Dect:
             boundingBox.ymin = np.int64(result.xyxy[0][1].item())
             boundingBox.xmax = np.int64(result.xyxy[0][2].item())
             boundingBox.ymax = np.int64(result.xyxy[0][3].item())
-            # get the object name from the result dictionary
             boundingBox.Class = results[0].names[result.cls.item()]
-            # get the confidence level 0 <= conf <= 1
             boundingBox.probability = result.conf.item()
             self.boundingBoxes.bounding_boxes.append(boundingBox)
         self.position_pub.publish(self.boundingBoxes)
